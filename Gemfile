@@ -27,6 +27,10 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+#rails g apipie:install
+#APIPIE_RECORD=examples rake test:integration
+
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -59,7 +63,6 @@ group :test do
   gem 'minitest-profiler'
   gem 'capybara-email'
   gem 'warden'
-  gem 'selenium-webdriver'
   gem 'chromedriver-helper'
 end
 

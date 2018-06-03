@@ -6,6 +6,6 @@
 #
 one: 
   email: "test@domain.com"
-  
+  auth_token: "valid_token"
 # column: value
 #
