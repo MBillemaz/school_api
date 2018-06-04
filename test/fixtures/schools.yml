@@ -1,4 +1,5 @@
 one:
+  id: 1
   name: "Ecole primaire Michel Servet"
   address: "2-6 Rue Alsace Lorraine, 69001 Lyon"
   nb_student: "350"
@@ -7,9 +8,10 @@ one:
   longitude: "4.8368897999999945"
 
 two:
+  id: 2
   name: "OGEC GROUPE SCOLAIRE SAINT DENIS"
   address: "7 Rue Hénon, 69004 Lyon"
   nb_student: "100"
-  status: "public"
+  status: "privé"
   latitude: "45.779445"
   longitude: "4.831833999999958"
