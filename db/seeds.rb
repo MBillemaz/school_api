@@ -7,3 +7,9 @@ School.create!([
         {"name":"Ecole Maternelle Audrey Hepburn","address":"8 Rue Tissot, 69009 Lyon","nb_student":"150","status":"public","latitude":"45.7766122","longitude":"4.80246360000001"},
         {"name":"École élémentaire","address":"2-6 Rue Alsace Lorraine, 69001 Lyon","nb_student":"80","status":"public","latitude":"45.7488929","longitude":"45.7488929"}
     ])
+
+user = User.new
+user.email = 'ynov@ynov.com'
+user.password = 'ynov'
+user.password_confirmation = 'ynov'
+user.save!
