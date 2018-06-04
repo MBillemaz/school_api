@@ -9,6 +9,6 @@ School.create!([
     ])
 
 User.create!({
-        email = 'ynov@ynov.com',
-        password = 'ynovPassword',
-        password_confirmation = 'ynovPassword'})  
+        email: 'ynov@ynov.com',
+        password: 'ynovPassword',
+        password_confirmation: 'ynovPassword'})  
