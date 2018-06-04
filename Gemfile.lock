@@ -40,6 +40,9 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    apipie-rails (0.4.0)
+      json
+      rails (>= 4.0)
     archive-zip (0.11.0)
       io-like (~> 0.3.0)
     arel (8.0.0)
@@ -88,6 +91,7 @@ GEM
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
+    json (2.1.0)
     launchy (2.4.3)
       addressable (~> 2.3)
     loofah (2.2.2)
@@ -212,6 +216,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  apipie-rails
   byebug
   capybara (~> 2.13)
   capybara-email

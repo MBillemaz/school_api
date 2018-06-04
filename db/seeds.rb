@@ -8,8 +8,8 @@ School.create!([
         {"name":"École élémentaire","address":"2-6 Rue Alsace Lorraine, 69001 Lyon","nb_student":"80","status":"public","latitude":"45.7488929","longitude":"45.7488929"}
     ])
 
-user = User.new
-user.email = 'ynov@ynov.com'
-user.password = 'ynovPassword'
-user.password_confirmation = 'ynovPassword'
-user.save!
+User.create!([
+    email = 'ynov@ynov.com'
+    password = 'ynovPassword'
+    password_confirmation = 'ynovPassword'
+])

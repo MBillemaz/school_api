@@ -23,7 +23,7 @@ class Api::V1::SchoolsController < Api::ApiController
     #     phone_number
     #     mail
     #     latitude
-    #     longitude
+    #     longitude 
     #     nb_student
     #     status
     # }
