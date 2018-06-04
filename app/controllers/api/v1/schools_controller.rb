@@ -61,7 +61,7 @@ class Api::V1::SchoolsController < Api::ApiController
             @school[param] = school_params[param]
         end
         @school.save
-        render 'api/v1/schools/show.json'
+        render :show
     end
 
 private

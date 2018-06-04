@@ -80,6 +80,17 @@ feature "Schools" do
             assert_equal 422, last_response.status
         end
 
+        it "should no create new school when mail is invalid" do 
+            assert_no_difference "School.count" do
+                post api_v1_schools_path, {school: {
+                    name: "abcd",
+                    mail: "toto"
+                }}, {'HTTP_AUTHORIZATION' => 'valid_token'}
+            end
+
+            assert_equal 422, last_response.status
+        end
+
     end
 
     describe "#show" do
