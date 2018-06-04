@@ -10,6 +10,6 @@ School.create!([
 
 user = User.new
 user.email = 'ynov@ynov.com'
-user.password = 'ynonPassword'
+user.password = 'ynovPassword'
 user.password_confirmation = 'ynovPassword'
 user.save!
