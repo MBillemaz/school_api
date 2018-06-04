@@ -1,6 +1,6 @@
 class Api::V1::SchoolsController < Api::ApiController
 
-    api :GET, '/v1/schools', 'Liste des écoles'
+    # api :GET, '/v1/schools', 'Liste des écoles'
     def index
         @schools = School.all
         status = params[:status]
