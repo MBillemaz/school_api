@@ -11,7 +11,6 @@ class Api::ApiController < ActionController::Base
 
     def authentication_success?
         token = request.headers['HTTP_AUTHORIZATION']
-        puts token
 
         return false if !token || token.blank?
         

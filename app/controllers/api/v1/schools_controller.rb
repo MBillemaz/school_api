@@ -42,13 +42,13 @@ class Api::V1::SchoolsController < Api::ApiController
     #api :SHOW '/v1/schools', 'Afficher une école"
     #params: id
     def show
-        @school = School.find(params[:id])
+        @school = School.find(school_params[:id])
     end
 
     #api :DELETE '/v1/schools', 'Supprimer une école"
     #params: id
     def destroy
-        School.delete(params[:id])
+        School.delete(school_params[:id])
         render json: {success: true}, status: 200
     end
 
@@ -56,7 +56,7 @@ class Api::V1::SchoolsController < Api::ApiController
     #params: id
     #paramêtre supplémentaire: School
     def update
-        @school = School.find(params[:id])
+        @school = School.find(school_params[:id])
         school_params.each do |param|
             @school[param] = school_params[param]
         end
